@@ -5,12 +5,12 @@ import { getStorage } from "firebase/storage";
 import { GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.VITE_APP_APIKEY,
-  authDomain: process.env.VITE_APP_AUTH,
-  projectId: process.env.VITE_APP_PROJID,
-  storageBucket: process.env.VITE_APP_STORAGE,
-  messagingSenderId: process.env.VITE_APP_SENDERID,
-  appId: process.env.VITE_APP_APPID,
+  apiKey: import.meta.env.VITE_APP_APIKEY,
+  authDomain: import.meta.env.VITE_APP_AUTH,
+  projectId: import.meta.env.VITE_APP_PROJID,
+  storageBucket: import.meta.env.VITE_APP_STORAGE,
+  messagingSenderId: import.meta.env.VITE_APP_SENDERID,
+  appId: import.meta.env.VITE_APP_APPID,
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
