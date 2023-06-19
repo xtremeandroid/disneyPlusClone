@@ -1,5 +1,5 @@
 ## Disney+ Clone
-This is a Disney+ clone project created by the Xtreme Android team. It aims to replicate the functionality and design of the popular streaming service Disney+. The clone is built using modern web technologies such as React, Redux, and Firebase.
+This is a Disney+ clone project. It aims to replicate the functionality and design of the popular streaming service Disney+. The clone is built using modern web technologies such as React, Redux, and Firebase.
 
 Live Link : https://disnepluss.netlify.app/
 
