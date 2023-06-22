@@ -8,7 +8,6 @@ const Recommendations = () => {
   const movies = useSelector(selectRecommend);
   return (
     <Container>
-      <h4>Recommended for You</h4>
       <Content>
         {movies &&
           movies.map((movie, key) => (

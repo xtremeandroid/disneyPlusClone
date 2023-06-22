@@ -8,7 +8,6 @@ const Originals = () => {
   const movies = useSelector(selectOriginal);
   return (
     <Container>
-      <h4>Originals</h4>
       <Content>
         {movies &&
           movies.map((movie, key) => (

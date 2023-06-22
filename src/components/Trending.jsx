@@ -8,7 +8,6 @@ const Trending = () => {
   const movies = useSelector(selectTrending);
   return (
     <Container>
-      <h4>Trending</h4>
       <Content>
         {movies &&
           movies.map((movie, key) => (

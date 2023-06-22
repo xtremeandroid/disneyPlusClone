@@ -57,9 +57,13 @@ const Home = () => {
     <Container>
       <ImgSlider />
       <Viewers />
+      <h4>Recommended for You</h4>
       <Recommendations />
+      <h4>New To Disney</h4>
       <NewToDisney />
+      <h4>Originals</h4>
       <Originals />
+      <h4>Trending</h4>
       <Trending />
     </Container>
   );

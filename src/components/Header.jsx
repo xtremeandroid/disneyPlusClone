@@ -3,6 +3,7 @@ import { auth, provider } from "../Firebase";
 import { signInWithPopup } from "firebase/auth";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
   selectUserName,
@@ -69,30 +70,30 @@ const Header = () => {
       ) : (
         <>
           <NavMenu>
-            <a href="/home">
+            <Link to="/home">
               <img src="/images/home-icon.svg" alt="home" />
               <span>HOME</span>
-            </a>
-            <a>
+            </Link>
+            <Link to="/explore">
               <img src="/images/search-icon.svg" alt="SEARCH" />
               <span>SEARCH</span>
-            </a>
-            <a>
+            </Link>
+            <Link to="/watchlist">
               <img src="/images/watchlist-icon.svg" alt="WATCHLIST" />
               <span>WATCHLIST</span>
-            </a>
-            <a>
+            </Link>
+            <Link to="/originals">
               <img src="/images/original-icon.svg" alt="ORIGINALS" />
               <span>ORIGINALS</span>
-            </a>
-            <a>
+            </Link>
+            <Link to="/movies">
               <img src="/images/movie-icon.svg" alt="MOVIES" />
               <span>MOVIES</span>
-            </a>
-            <a>
+            </Link>{" "}
+            <Link to="/series">
               <img src="/images/series-icon.svg" alt="SERIES" />
               <span>SERIES</span>
-            </a>
+            </Link>
           </NavMenu>
           <SignOut>
             <UserName>{userName}</UserName>
@@ -123,7 +124,7 @@ const Nav = styled.nav`
 
 const Logo = styled.a`
   padding: 0;
-  width: 80px;
+  width: 70px;
   margin-top: 4px;
   max-height: 70px;
   font-size: 0;
@@ -144,7 +145,7 @@ const NavMenu = styled.div`
   padding: 0px;
   position: relative;
   margin-right: auto;
-  margin-left: 25px;
+  margin-left: 15px;
 
   a {
     display: flex;
@@ -194,9 +195,9 @@ const NavMenu = styled.div`
     }
   }
 
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
-  } */
+  }
 `;
 
 const Login = styled.a`
